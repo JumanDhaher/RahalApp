@@ -322,6 +322,7 @@ struct UserSignUp: View {
             vm.fetchUser { userModel in
                 if let userModel = userModel {
                     print("User found: \(userModel.firstName)")
+                    print("User found: \(userModel.idUser)")
                     navigateToSelectDestinationView = true
                 } else {
                     print("User not found or an error occurred.")
